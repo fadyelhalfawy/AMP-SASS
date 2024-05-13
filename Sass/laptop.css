@@ -1,0 +1,65 @@
+@media screen and (min-width: 768px) {
+  header {
+    display: flex;
+    gap: 12%;
+  }
+  nav a {
+    padding: 5px;
+  }
+  #get-app-form {
+    width: 100%;
+  }
+  .get-app {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+  }
+  input[type=text] {
+    width: auto;
+  }
+  input[type=submit] {
+    width: auto;
+    padding: 14px 35px;
+  }
+  #rating-form {
+    width: 100%;
+    justify-content: space-evenly;
+  }
+  #activity-goals {
+    flex-direction: row;
+    gap: 0;
+    text-align: left;
+  }
+  #activity-goals img {
+    width: 50%;
+  }
+  #about-application-card .card-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  #about-application-card .card-body {
+    text-wrap: balance;
+    width: 30%;
+    margin-left: 10px;
+  }
+  #about-application-card .card-body img {
+    width: 75px;
+  }
+  #look-at-application-form .card-body {
+    flex-flow: row wrap;
+  }
+  #look-at-application-form .card-body img {
+    width: 30%;
+    margin: 10px;
+  }
+  #get-access-app .get-access-app-cards {
+    flex-direction: row;
+  }
+  #our-team .team-cards .card-body {
+    margin: 90px 14px;
+    width: 21%;
+  }
+  #app-form h3 {
+    width: 99%;
+  }
+}/*# sourceMappingURL=laptop.css.map */
