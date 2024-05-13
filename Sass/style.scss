@@ -1,0 +1,202 @@
+$font-body: 1rem "Nunito", sans-serif;
+$height-body: 100vh;
+$pointer: pointer;
+$space-bottom: 10px;
+$light-background: #fff;
+$black-font-color: #000;
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font: $font-body;
+    min-height: $height-body;
+}
+
+header {
+    top: 0;
+    margin: 8px;
+}
+
+footer {
+    bottom: 0;
+}
+
+.small-p {
+    opacity: 0.8;
+    font-size: 12px;
+}
+
+/* Header */
+h1 {
+    padding: 2px;
+}
+
+.phone-img {
+    width: 40px;
+    height: 40px;
+}
+
+.title {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+nav {
+    background-color: $light-background;
+    color: $black-font-color;
+    padding: 15px;
+    font-weight: bolder;
+    display: flex;
+    justify-content: space-evenly;
+
+    a {
+        text-decoration: none;
+    }
+}
+
+.buy-now {
+    display: block;
+    margin: auto;
+    padding: 5px;
+    width: 25%;
+    background-color: $light-background;
+    color: #008CBA;
+    border: 2px solid #008CBA;
+    border-radius: 4px;
+
+    &:hover {
+        cursor: $pointer;
+        background-color: #9dd9ed;
+        opacity: 0.8;
+    }
+}
+/*  */
+
+main {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+/* Get App form */
+#get-app-form {
+    p,h2 {
+        color: $light-background;
+        text-align: center;
+    }
+    
+    h2 {
+        padding: 15px;
+    }
+}
+
+.background-image {
+    background-image: url("../Image/background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 39px;
+}
+
+input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+  
+input[type=submit] {
+    width: 100%;
+    background-color: #4CAF50;
+    color: $light-background;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: $pointer;
+
+    &[type=submit]:hover {
+        opacity: 0.8;
+    }
+}
+/*  */
+
+/* Rating form */
+#rating-form {
+    display: flex;
+    line-height: 1.4rem;
+    text-align: center;
+}
+/*  */
+
+/* Activity goals */
+#activity-goals {
+    background-color: floralwhite;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+    text-align: center;
+
+    h3 {
+        margin-bottom: $space-bottom;
+    }
+
+    img {
+        width: 300px;
+    }
+}
+/*  */
+
+/* About App */
+#about-application-card {
+    .card-title {
+        text-align: center;
+        margin: 10px;
+        line-height: 1.5rem;
+    }
+
+    .card-body {
+        display: flex;
+        background-color: floralwhite;
+        margin-bottom: $space-bottom;
+
+        img {
+            width: 150px;
+            height: 150px;
+        }
+
+        .card-text {
+            margin: 15px;
+        }
+    }
+}
+/*  */
+
+/* Look at App */
+#look-at-application-form {
+    .card-title {
+        text-align: center;
+        margin-bottom: $space-bottom;
+    }
+    
+    .card-body {
+        display: flex;
+        flex-direction: column;
+
+        img {
+            width: 100%;
+            margin-bottom: $space-bottom;
+        }
+    }
+}
+/*  */
